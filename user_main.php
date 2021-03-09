@@ -4,6 +4,6 @@
 	<title>Attendance Check :: main</title>
 </head>
 <body>
-	<h1>Student Main Page</h1>
+	<h1>user Main Page</h1>
 </body>
 </html>
