@@ -1,5 +1,5 @@
 <?php 
-	
+	/* variable */	
 	/* Connect Database Function */
 	$servername 	= "localhost";
 	$username 		= "root";
