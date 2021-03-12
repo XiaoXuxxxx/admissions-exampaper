@@ -19,7 +19,7 @@
 			if($user->type == 1){
 				header("Location:main.php");
 			}else{
-				header("Location:student_main.php");
+				header("Location:user_main.php");
 			}
 		}else{
 			header("Location:index.php");

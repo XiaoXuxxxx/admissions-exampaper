@@ -5,7 +5,15 @@
 	unset($_SESSION['role']);
 
 ?>
-	<script type="text/javascript">
-		window.alert("Logout Success!")
-		window.location.href='index.php'
-	</script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>	
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script type="text/javascript">
+	swal("Logout","ออกจากระบบสำเร็จ","success")
+</script>
+</body>
+</html>
