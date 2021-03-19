@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Admissions ExamPaper</title>
+		<title>AdmissionsPlus</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
    		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,13 +12,12 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css" integrity="sha512-EaaldggZt4DPKMYBa143vxXQqLq5LE29DG/0OoVenoyxDrAScYrcYcHIuxYO9YNTIQMgD8c8gIUU8FQw7WpXSQ==" crossorigin="anonymous" />
 		<style type="text/css">
 		body{
-		font-family: 'Athiti', sans-serif;
+			font-family: 'Athiti', sans-serif;
 		}
 		</style>
 	</head>
 	<body >
 		<div id="main-container">
-			<div id="main-row" class="row">
 				
 				<div id="main-page">
 					<div id="main-content">
@@ -33,7 +32,7 @@
 										<img width="90" src="https://yt3.ggpht.com/ytc/AAUvwnjBQcErAYIglGYJaJTOyepB5-3LjskC1vPzjNt-_Q=s900-c-k-c0x00ffffff-no-rj">
 									</td>
 									<td align="left">
-										<h3><i class="fa fa-sign-in"></i> <b>Admissions KMUTT</b></h3>
+										<h3><i class="fa fa-sign-in"></i> <b>AdmissionsPlus</b></h3>
 										ONET, GAT/PAT, วิชาสามัญ
 									</td>
 								</tr>
@@ -46,13 +45,13 @@
 										<div class="form-group">
 											<label class="col-md-4 control-label"><b>Username</b></label>
 											<div class="col-md-6">
-												<input type="text" autofocus class="form-control" name="username" value="" placeholder="ชื่อผู้ใช้งาน">
+												<input type="text" required autofocus class="form-control" name="username" value="" placeholder="ชื่อผู้ใช้งาน">
 											</div>
 										</div>
 										<div class="form-group">
 											<label class="col-md-4 control-label"><b>Password</b></label>
 											<div class="col-md-6">
-												<input type="password" class="form-control" name="password" placeholder="รหัสผ่าน">
+												<input type="password" required class="form-control" name="password" placeholder="รหัสผ่าน">
 											</div>
 										</div>
 										<div class="form-group">

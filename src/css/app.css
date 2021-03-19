@@ -2,7 +2,12 @@
 
             font-family: 'Prompt', sans-serif;
         }
-
+text{
+  color:blue;
+}
+.greenClass{
+  background-color: green;
+}
 body, html {
   background-color: #fff;
   background-size: cover;
@@ -16,7 +21,7 @@ hr {
 
 #main-container {
   height: 100%; 
-  padding-left: 15px;
+  /*padding-left: 15px;*/
 }
 
 #main-content-container {
@@ -48,7 +53,12 @@ hr {
       width: 60%; } }
 
 
+.ui-widget-overlay {
+   opacity: .50 !important; /* Make sure to change both of these, as IE only sees the second one */
+  filter: Alpha(Opacity=50) !important;
 
+  background: rgb(50, 50, 50) !important; /* This will make it darker */
+}
 .container-fluid #main-logo {
   width: 75%; }
 
@@ -93,111 +103,5 @@ hr {
     .display-user .username-group .rank {
       color: #aaa; }
 
-.user-card {
-  background-color: #eee;
-  background-size: cover;
-  color: #444;
-  margin-bottom: 16px; }
-  .user-card .user-card-content {
-    padding: 16px; }
-    .user-card .user-card-content h1, .user-card .user-card-content h2, .user-card .user-card-content h3, .user-card .user-card-content h4, .user-card .user-card-content h5, .user-card .user-card-content h6 {
-      color: #444; }
-      .user-card .user-card-content h1 small, .user-card .user-card-content h2 small, .user-card .user-card-content h3 small, .user-card .user-card-content h4 small, .user-card .user-card-content h5 small, .user-card .user-card-content h6 small {
-        color: #5e5e5e; }
-    .user-card .user-card-content ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0; }
-      .user-card .user-card-content ul li {
-        font-size: 18px; }
-        .user-card .user-card-content ul li label {
-          font-size: 14px;
-          color: #919191; }
-
-.attendance-checking .status-show-psuedo-style {
-  padding: 6px 0px 6px 0px;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-
-.attendance-checking .last-check {
-  margin: 0; }
-
-.attendance-checking .last-check-1 {
-  font-size: 18px; }
-
-.attendance-checking .last-check-2 {
-  font-size: 16px; }
-
-.attendance-checking .last-check-3 {
-  font-size: 14px; }
-
-.attendance-checking .small-last-check {
-  font-size: 10px;
-  margin: 0; }
-
-.attendance-checking .local-name {
-  margin-bottom: 0; }
-
-.attendance-checking .user-attendance-card {
-  width: 240px;
-  height: 180px;
-  float: left;
-  padding: 6px;
-  cursor: pointer; }
-  .attendance-checking .user-attendance-card .user-attendance-card-inner {
-    width: 100%;
-    height: 100%;
-    background-color: #aaa;
-    background-size: cover;
-    position: relative;
-    transition: opacity 0.25s, -webkit-transform 0.25s;
-    transition: opacity 0.25s, transform 0.25s; }
-    .attendance-checking .user-attendance-card .user-attendance-card-inner .user-attendance-card-gradiant {
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(207, 207, 207, 0) 19%, rgba(0, 0, 0, 0.75) 100%);
-      padding: 8px; }
-      .attendance-checking .user-attendance-card .user-attendance-card-inner .user-attendance-card-gradiant .user-attendance-card-content {
-        color: white;
-        position: absolute;
-        bottom: 8px;
-        width: 212px; }
-        .attendance-checking .user-attendance-card .user-attendance-card-inner .user-attendance-card-gradiant .user-attendance-card-content > .nickname {
-          margin: 0;
-          font-size: 28px;
-          color: white; }
-          .attendance-checking .user-attendance-card .user-attendance-card-inner .user-attendance-card-gradiant .user-attendance-card-content > .nickname > small {
-            color: white; }
-        .attendance-checking .user-attendance-card .user-attendance-card-inner .user-attendance-card-gradiant .user-attendance-card-content > .camp_id {
-          margin: 0;
-          font-size: 16px;
-          color: white; }
-        .attendance-checking .user-attendance-card .user-attendance-card-inner .user-attendance-card-gradiant .user-attendance-card-content > hr {
-          margin: 6px 0 6px 0; }
-        .attendance-checking .user-attendance-card .user-attendance-card-inner .user-attendance-card-gradiant .user-attendance-card-content > p {
-          margin: 0;
-          font-size: 14px;
-          line-height: 16px; }
-        .attendance-checking .user-attendance-card .user-attendance-card-inner .user-attendance-card-gradiant .user-attendance-card-content > .sec {
-          float: right; }
-  .attendance-checking .user-attendance-card .user-attendance-card-selected {
-    opacity: 0.60;
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-    transition: opacity 0.25s, -webkit-transform 0.25s;
-    transition: opacity 0.25s, transform 0.25s; }
-
-.col-no-padding {
-  padding: 0; }
-
-.col-registration {
-  padding: 2px; }
-  .col-registration .panel {
-    box-shadow: none;
-    border: 1px solid #ddd; }
-
-.user-card:last-child {
-  margin-bottom: 0px; }
 
 /*# sourceMappingURL=app.css.map */

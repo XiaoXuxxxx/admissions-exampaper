@@ -15,11 +15,12 @@
 		if($data){
 			$user = $stmt->fetch(PDO::FETCH_OBJ);
 			$_SESSION['user'] = $user->id;
+			$_SESSION['name'] = $user->name;
 			$_SESSION['role'] = $user->type;
 			if($user->type == 1){
 				header("Location:main.php");
 			}else{
-				header("Location:user_main.php");
+				header("Location:main.php");
 			}
 		}else{
 			header("Location:index.php");
