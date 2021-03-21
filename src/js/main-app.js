@@ -7,11 +7,14 @@ var sub_onet = `
 	<option value="o5">สังคมศึกษา ศาสนาและวัฒนธรรม</option>
 `
 var sub_gat_pat = `
-	<option value="g">GAT (General Aptitude Test)</option>
+	<option value="g1">GAT ตอนที่ 1 (General Aptitude Test)</option>
+	<option value="g2">GAT ตอนที่ 2 (General Aptitude Test)</option>
 	<option value="p1">PAT 1 ความถนัดทางคณิตศาสตร์</option>
 	<option value="p2">PAT 2 ความถนัดทางวิทยาศาสตร์</option>
 	<option value="p3">PAT 3 ความถนัดทางวิศวกรรมศาสตร์</option>
-	<option value="p4">PAT 4 ความถนัดทางสถาปัตยกรรมศาสตร์</option>
+	<option value="p41">PAT 4 (1) ความถนัดทางสถาปัตยกรรมศาสตร์</option>
+	<option value="p42">PAT 4 (2) ความถนัดทางสถาปัตยกรรมศาสตร์</option>
+	<option value="p43">PAT 4 (3) ความถนัดทางสถาปัตยกรรมศาสตร์</option>
 	<option value="p5">PAT 5 ความถนัดทางวิชาชีพครู</option>
 	<option value="p6">PAT 6 ความถนัดทางศิลปกรรมศาสตร์</option>
 	<option value="p71">PAT 7.1 ความถนัดทางภาษาฝรั่งเศส</option>
@@ -204,10 +207,10 @@ function getExamData(){
 				for(var i=0;i<resp.length;i++){
 					if(resp[i].verify == 1){
 						verify = " <font color='green'><i class='fa fa-check'></i></font>"
-						// disabled = ""
-						// btn_type = "btn-success"
-						disabled = "disabled"
-						btn_type = "btn-outline-success"
+						disabled = ""
+						btn_type = "btn-success"
+						// disabled = "disabled"
+						// btn_type = "btn-outline-success"
 					}else{
 						verify = " <font color='#999'><i class='fa fa-spinner'></i></font>"
 						disabled = ""
@@ -355,16 +358,22 @@ function exam_type(type){
 }
 
 function exam_subject(sub){
-	if(sub == "g"){
-		return "GAT"
+	if(sub == "g1"){
+		return "GAT ตอนที่ 1"
+	}else if(sub == "g2"){
+		return "GAT ตอนที่ 2"
 	}else if(sub == "p1"){
 		return "PAT 1 ความถนัดทางคณิตศาสตร์"
 	}else if(sub == "p2"){
 		return "PAT 2 ความถนัดทางวิทยาศาสตร์"
 	}else if(sub == "p3"){
 		return "PAT 3 ความถนัดทางวิศวกรรมศาสตร์"
-	}else if(sub == "p4"){
-		return "PAT 4 ความถนัดทางสถาปัตยกรรมศาสตร์"
+	}else if(sub == "p41"){
+		return "PAT 4 (1) ความถนัดทางสถาปัตยกรรมศาสตร์"
+	}else if(sub == "p42"){
+		return "PAT 4 (2) ความถนัดทางสถาปัตยกรรมศาสตร์"
+	}else if(sub == "p43"){
+		return "PAT 4 (3) ความถนัดทางสถาปัตยกรรมศาสตร์"
 	}else if(sub == "p5"){
 		return "PAT 5 ความถนัดทางวิชาชีพครู"
 	}else if(sub == "p6"){

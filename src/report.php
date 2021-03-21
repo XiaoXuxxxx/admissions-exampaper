@@ -50,38 +50,56 @@
 							$school[13] = "มัธยมวัดหนองแขม";
 							$school[14] = "วัดอินทาราม";
 							$school[15] = "มัธยมวัดดาวคนอง";
+							$school[16] = "ศึกษานารี";
 
-							$sub[0] = "g";
-							for($p=1;$p<=6;$p++){
-								$sub[$p] = "p".$p;
-							}
+							$sub[0] = "g1";
+							$sub[1] = "g2";
+							$sub[2] = "p1";
+							$sub[3] = "p2";
+							$sub[4] = "p3";
+							$sub[5] = "p41";
+							$sub[6] = "p42";
+							$sub[7] = "p43";
+							$sub[8] = "p5";
+							$sub[9] = "p6";
+							$sub[10] = "p71";
+							$sub[11] = "p72";
+							$sub[12] = "p73";
+							$sub[13] = "p74";
+							$sub[14] = "p75";
+							$sub[15] = "p76";
+							$sub[16] = "p77";
+							$sub[17] = "m1";
+							$sub[18] = "m2";
+							$sub[19] = "m3";
+							$sub[20] = "m4";
+							$sub[21] = "m5";
+							$sub[22] = "m6";
+							$sub[23] = "m7";
+							$sub[24] = "o1";
+							$sub[25] = "o2";
+							$sub[26] = "o3";
+							$sub[27] = "o4";
+							$sub[28] = "o5";
 
-							for($pd=7;$pd<=13;$pd++){
-								$no = $pd-6;
-								$sub[$pd] = "p7".$no;
-							}
-
-							for($m=14;$m<=20;$m++){
-								$no2=$m-13;
-								$sub[$m] = "m".$no2;
-							}
-
-							for($o=21;$o<=25;$o++){
-								$no3=$o-20;
-								$sub[$o] = "o".$no3;
-							}
 
 							function exam_subject($sub){
-								if($sub == "g"){
-									return "GAT";
+								if($sub == "g1"){
+									return "GAT ตอนที่ 1";
+								}else if($sub == "g2"){
+									return "GAT ตอนที่ 2";
 								}else if($sub == "p1"){
 									return "PAT 1 ความถนัดทางคณิตศาสตร์";
 								}else if($sub == "p2"){
 									return "PAT 2 ความถนัดทางวิทยาศาสตร์";
 								}else if($sub == "p3"){
 									return "PAT 3 ความถนัดทางวิศวกรรมศาสตร์";
-								}else if($sub == "p4"){
-									return "PAT 4 ความถนัดทางสถาปัตยกรรมศาสตร์";
+								}else if($sub == "p41"){
+									return "PAT 4 (1) ความถนัดทางสถาปัตยกรรมศาสตร์";
+								}else if($sub == "p42"){
+									return "PAT 4 (2) ความถนัดทางสถาปัตยกรรมศาสตร์";
+								}else if($sub == "p43"){
+									return "PAT 4 (3) ความถนัดทางสถาปัตยกรรมศาสตร์";
 								}else if($sub == "p5"){
 									return "PAT 5 ความถนัดทางวิชาชีพครู";
 								}else if($sub == "p6"){
@@ -127,7 +145,7 @@
 								}
 							}
 
-							for($i=0 ; $i<=15 ; $i++){
+							for($i=0 ; $i<=16 ; $i++){
 								echo "<br><h4>".$school[$i]."</h4>";
 
 								echo "<table class='table table-hover table-bordered'>";
@@ -139,7 +157,7 @@
 									echo "<th>จำนวนผู้ขาดสอบ</th>";
 								echo "</tr>";
 
-								for($s=0 ; $s<=25;$s++){
+								for($s=0 ; $s<=28 ; $s++){
 									$c = $db->prepare("SELECT * FROM examData WHERE school = '$school[$i]' AND subject = '$sub[$s]'");
 									$c->execute();
 									$count = $c->rowCount();
