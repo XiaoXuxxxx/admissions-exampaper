@@ -76,11 +76,13 @@
 							$sub[21] = "m5";
 							$sub[22] = "m6";
 							$sub[23] = "m7";
-							$sub[24] = "o1";
-							$sub[25] = "o2";
-							$sub[26] = "o3";
-							$sub[27] = "o4";
-							$sub[28] = "o5";
+							$sub[24] = "m8";
+							$sub[25] = "m9";
+							$sub[26] = "o1";
+							$sub[27] = "o2";
+							$sub[28] = "o3";
+							$sub[29] = "o4";
+							$sub[30] = "o5";
 
 
 							function exam_subject($sub){
@@ -119,19 +121,23 @@
 								}else if($sub == "p77"){
 									return "PAT 7.7 ความถนัดทางภาษาเกาหลี";
 								}else if($sub == "m1"){
-									return "69 ชีววิทยา";
+									return "ชีววิทยา";
 								}else if($sub == "m2"){
-									return "49 ฟิสิกส์";
+									return "ฟิสิกส์";
 								}else if($sub == "m3"){
-									return "09 ภาษาไทย";
+									return "ภาษาไทย";
 								}else if($sub == "m4"){
-									return "19 สังคมศึกษา";
+									return "สังคมศึกษา";
 								}else if($sub == "m5"){
-									return "39 คณิตศาสตร์ 1";
+									return "คณิตศาสตร์ 1";
 								}else if($sub == "m6"){
-									return "29 ภาษาอังกฤษ";
+									return "ภาษาอังกฤษ";
 								}else if($sub == "m7"){
-									return "59 เคมี";
+									return "เคมี";
+								}else if($sub == "m8"){
+									return "คณิตศาสตร์ 2";
+								}else if($sub == "m9"){
+									return "วิทยาศาสตร์ทั่วไป";
 								}else if($sub == "o1"){
 									return "ภาษาไทย";
 								}else if($sub == "o2"){
@@ -157,7 +163,7 @@
 									echo "<th>จำนวนผู้ขาดสอบ</th>";
 								echo "</tr>";
 
-								for($s=0 ; $s<=28 ; $s++){
+								for($s=0 ; $s<=30 ; $s++){
 									$c = $db->prepare("SELECT * FROM examData WHERE school = '$school[$i]' AND subject = '$sub[$s]'");
 									$c->execute();
 									$count = $c->rowCount();
