@@ -121,33 +121,33 @@
 								}else if($sub == "p77"){
 									return "PAT 7.7 ความถนัดทางภาษาเกาหลี";
 								}else if($sub == "m1"){
-									return "ชีววิทยา";
+									return "วิชาสามัญ - ชีววิทยา";
 								}else if($sub == "m2"){
-									return "ฟิสิกส์";
+									return "วิชาสามัญ - ฟิสิกส์";
 								}else if($sub == "m3"){
-									return "ภาษาไทย";
+									return "วิชาสามัญ - ภาษาไทย";
 								}else if($sub == "m4"){
-									return "สังคมศึกษา";
+									return "วิชาสามัญ - สังคมศึกษา";
 								}else if($sub == "m5"){
-									return "คณิตศาสตร์ 1";
+									return "วิชาสามัญ - คณิตศาสตร์ 1";
 								}else if($sub == "m6"){
-									return "ภาษาอังกฤษ";
+									return "วิชาสามัญ - ภาษาอังกฤษ";
 								}else if($sub == "m7"){
-									return "เคมี";
+									return "วิชาสามัญ - เคมี";
 								}else if($sub == "m8"){
-									return "คณิตศาสตร์ 2";
+									return "วิชาสามัญ - คณิตศาสตร์ 2";
 								}else if($sub == "m9"){
-									return "วิทยาศาสตร์ทั่วไป";
+									return "วิชาสามัญ - วิทยาศาสตร์ทั่วไป";
 								}else if($sub == "o1"){
-									return "ภาษาไทย";
+									return "ONET - ภาษาไทย";
 								}else if($sub == "o2"){
-									return "คณิตศาสตร์";
+									return "ONET - คณิตศาสตร์";
 								}else if($sub == "o3"){
-									return "วิทยาศาสตร์";
+									return "ONET - วิทยาศาสตร์";
 								}else if($sub == "o4"){
-									return "ภาษาอังกฤษ";
+									return "ONET - ภาษาอังกฤษ";
 								}else if($sub == "o5"){
-									return "สังคมศึกษา ศาสนาและวัฒนธรรม";
+									return "ONET - สังคมศึกษา ศาสนาและวัฒนธรรม";
 								}
 							}
 
