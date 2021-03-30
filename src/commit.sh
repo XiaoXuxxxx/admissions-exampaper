@@ -1,1 +1,1 @@
-git add . && git commit -m '$0' && git push 
+git add . && git commit -m '{$0}' && git push 
