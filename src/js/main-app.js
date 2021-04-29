@@ -61,6 +61,13 @@ function call_people(){
 	sum_people = sum
 }
 
+function sum_atten_people(){
+	$("#sum_people").text("")
+	$("#sum_people").text(parseInt($("#attend").val()) + parseInt($("#no_attend").val()))
+}
+
+sum_atten_people()
+
 function call_paper(){
 	var sum = parseInt($("#paper").val()) + parseInt($("#paper_extra").val())
 	$("#sum_paper").html($("#paper").val()+ "+" + $("#paper_extra").val() + " = " + sum + " ชุด" )

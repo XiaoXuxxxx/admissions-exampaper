@@ -304,14 +304,17 @@
 						      		<div class="col-md-6">
 						      			<div class="form-group">
 						      				<label>จำนวนผู้<font color="green"><u>เข้าสอบ </u></font></label>
-						      				<input class="form-control" autofocus type="number" id="attend" placeholder="จำนวนผู้เข้าสอบ">
+						      				<input class="form-control" autofocus onchange="sum_atten_people()" type="number" id="attend" placeholder="จำนวนผู้เข้าสอบ">
 						      			</div>
 						      		</div>
 						      		<div class="col-md-6">
 						      			<div class="form-group">
 						      				<label>จำนวนผู้<font color="red"><u>ขาดสอบ </u></font></label>
-						      				<input class="form-control" type="number" id="no_attend" placeholder="จำนวนผู้ขาดสอบ">
+						      				<input class="form-control" onchange="sum_atten_people()" type="number" id="no_attend" placeholder="จำนวนผู้ขาดสอบ">
 						      			</div>
+						      		</div>
+						      		<div class="col-md-12">
+						      			รวมทั้งสิ้น : <text id="sum_people">0</text> คน
 						      		</div>
 						      	</div>
 						      </div>
