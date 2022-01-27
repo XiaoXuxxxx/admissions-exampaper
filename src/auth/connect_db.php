@@ -1,10 +1,10 @@
 <?php 
 	/* variable */	
 	/* Connect Database Function */
-	$servername 	= "localhost";
+	$servername 	= "exampaper_database";
 	$username 		= "root";
-	$password 		= "1234";
-	$database  		= "ben"; 
+	$password 		= "password1234";
+	$database  		= "exampaper"; 
 
 	try {
 	  $db = new PDO("mysql:host=$servername;dbname=$database", $username, $password);

@@ -1,5 +1,51 @@
-version '3.5'
-services
-  app:
+version: "3"
 
-  db:
+services:
+  exampaper_nginx:
+    build:
+      context: ./build
+      dockerfile: Dockerfile.nginx
+    container_name: exampaper_nginx
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/var/www/html:delegated
+    depends_on:
+      - exampaper_php
+      - exampaper_database
+
+  exampaper_php:
+    build:
+      context: ./build
+      dockerfile: Dockerfile.php
+    container_name: exampaper_php
+    restart: always
+    volumes:
+      - ./src:/var/www/html:delegated
+    expose:
+      - "9000"
+
+  exampaper_database:
+    image: mariadb:10.5.8
+    container_name: exampaper_database
+    restart: always
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+      - ./database/exampaper.sql:/docker-entrypoint-initdb.d/dump.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: "password1234"
+      MYSQL_DATABASE: exampaper
+    expose:
+      - "3306"
+
+  exampaper_dba:
+    depends_on:
+      - exampaper_database
+    image: phpmyadmin/phpmyadmin
+    container_name: exampaper_dba
+    restart: always
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: exampaper_database
