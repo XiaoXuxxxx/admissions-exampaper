@@ -45,6 +45,7 @@
 											<option value="1">O-NET</option>
 											<option value="2">GAT/PAT</option>
 											<option value="3">วิชาสามัญ</option>
+											<option value="4">การทดสอบและประเมินสมรรถนะทางวิชาชีพครู</option>
 										</select>
 									</div>
 								</div>
@@ -59,23 +60,23 @@
 									<label>โรงเรียน</label>
 									<select class="form-control" id="school" required>
 										<option value="0">โปรดเลือก ...</option>
-										<option>ทวีธาภิเศก</option>
-										<option>เทพศิรินทร์สมุทรปราการ</option>
-										<option>บางปะกอกวิทยาคม</option>
-										<option>ปัญญาวรคุณ</option>
-										<option>โพธิสารพิทยากร</option>
-										<option>มัธยมวัดดาวคนอง</option>
-										<option>มัธยมวัดสิงห์</option>
-										<option>มัธยมวัดหนองแขม</option>
-										<option>รัตนโกสินทร์สมโภชบางขุนเทียน</option>
-										<option>ราชประชาสมาสัยฝ่ายมัธยม</option>
 										<option>วัดนวลนรดิศ</option>
 										<option>วัดราชโอรส</option>
-										<option>วัดอินทาราม</option>
+										<option>บางประกอกวิทยาคม</option>
 										<option>วิทยาลัยพณิชยการเชตุพน</option>
-										<option>ศึกษานารี</option>
-										<option>สตรีสมุทรปราการ</option>
+										<option>ปัญญาวรคุณ</option>
+										<option>โพธิสารพิทยากร</option>
 										<option>สมุทรปราการ</option>
+										<option>เทพศิรินทร์ สมุทรปราการ</option>
+										<option>สตรีสมุทรปราการ</option>
+										<option>ศึกษานารี</option>
+										<option>มัธยมวัดสิงห์</option>
+										<option>ชิโนรสวิทยาลัย</option>
+										<option>รัตนโกสินทร์สมโภช บางขุนเทียน</option>
+										<option>ทวีธาภิเศก</option>
+										<option>มัธยมวัดหนองแขม</option>
+										<option>ราชประชาสมาสัยฯ</option>
+
 									</select>
 								</div>
 							</div>
