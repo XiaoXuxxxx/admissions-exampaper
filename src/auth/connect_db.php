@@ -3,7 +3,7 @@
 	/* Connect Database Function */
 	$servername 	= "exampaper_database";
 	$username 		= "root";
-	$password 		= "password1234";
+	$password 		= "Admission@2022";
 	$database  		= "exampaper"; 
 
 	try {
