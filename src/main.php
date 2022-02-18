@@ -184,6 +184,7 @@
 											<option value="1">O-NET</option>
 											<option value="2">GAT/PAT</option>
 											<option value="3">วิชาสามัญ</option>
+											<option value="4">การทดสอบและประเมินสมรรถนะทางวิชาชีพครู</option>
 										</select>
 									</div>
 								</div>
