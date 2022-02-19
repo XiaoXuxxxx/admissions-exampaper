@@ -86,6 +86,7 @@
 							$sub[32] = "k2";
 							$sub[33] = "k3";
 							$sub[34] = "k4";
+							$sub[35] = "k5";
 
 							function exam_subject($sub){
 								if($sub == "g1"){
@@ -157,7 +158,9 @@
 								}else if($sub == "k3"){
 									return "ครู - เทคโนโลยีดิจิทัลเพื่อการสื่อสาร";
 								}else if($sub == "k4"){
-									return "ครู - วิชาชีพครู";
+									return "ครู - วิชาชีพครู (ปรนัย)";
+								}else if($sub == "k5"){
+									return "ครู - วิชาชีพครู (อัตนัย)";
 								}
 							}
 
@@ -217,6 +220,5 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap.min.js"></script>
-<script type="text/javascript" src="./js/report.js"></script>
 </body>
 </html>

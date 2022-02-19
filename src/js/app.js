@@ -41,7 +41,8 @@ var sub_kru = `
 	<option value="k1">วิชาการใช้ภาษาไทยเพื่อการสื่อสาร</option>
 	<option value="k2">วิชาการใช้ภาษาอังกฤษเพื่อการสื่อสาร</option>
 	<option value="k3">วิชาการใช้เทคโนโลยีดิจิทัลเพื่อการสื่อสาร</option>
-	<option value="k4">วิชาชีพครู</option>
+	<option value="k4">วิชาชีพครู (ปรนัย)</option>
+  <option value="k5">วิชาชีพครู (อัตนัย)</option>
 `;
 
 function auto_exam_list() {
@@ -482,6 +483,8 @@ function exam_subject(sub) {
   } else if (sub == "k3") {
     return "วิชาการใช้เทคโนโลยีดิจิทัลเพื่อการสื่อสาร";
   } else if (sub == "k4") {
-    return "วิชาชีพครู";
+    return "วิชาชีพครู (ปรนัย)";
+  } else if (sub == "k5") {
+    return "วิชาชีพครู (อัตนัย)";
   }
 }
