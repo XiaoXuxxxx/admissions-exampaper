@@ -81,9 +81,19 @@ function sum_atten_people() {
 sum_atten_people();
 
 function call_paper() {
-  var sum = parseInt($("#paper").val()) + parseInt($("#paper_extra").val());
+  var sum =
+    parseInt($("#paper").val()) +
+    parseInt($("#paper_extra").val()) +
+    parseInt($("#paper_backup").val());
   $("#sum_paper").html(
-    $("#paper").val() + "+" + $("#paper_extra").val() + " = " + sum + " ชุด"
+    $("#paper").val() +
+      "+" +
+      $("#paper_extra").val() +
+      "+" +
+      $("#paper_backup").val() +
+      " = " +
+      sum +
+      " ชุด"
   );
 }
 
@@ -98,7 +108,10 @@ function insert() {
   var extra2 = $("#extra2").val();
   var paper = $("#paper").val();
   var paper_extra = $("#paper_extra").val();
+  var paper_backup = $("#paper_backup").val();
   var uid = $("#uid").val();
+
+  console.log("ppbackup=>" + paper_backup);
 
   $.ajax({
     url: "/api/api.insert.php",
@@ -114,6 +127,7 @@ function insert() {
       extra2: extra2,
       paper: paper,
       paper_extra: paper_extra,
+      paper_backup: paper_backup,
       uid: uid,
     },
     success: function (resp) {
@@ -159,7 +173,10 @@ function getHistory() {
           extra = "";
         }
 
-        sumPaper = parseInt(resp[i].paper) + parseInt(resp[i].paper_extra);
+        sumPaper =
+          parseInt(resp[i].paper) +
+          parseInt(resp[i].paper_extra) +
+          parseInt(resp[i].paper_backup);
         tb_his.row
           .add([
             i + 1 + " " + verify,
@@ -168,7 +185,13 @@ function getHistory() {
             resp[i].school,
             resp[i].box_id,
             resp[i].start_id + " - " + resp[i].end_id + extra,
-            resp[i].paper + "+" + resp[i].paper_extra + "=" + sumPaper,
+            resp[i].paper +
+              "+" +
+              resp[i].paper_extra +
+              "+" +
+              resp[i].paper_backup +
+              "=" +
+              sumPaper,
             "<button onclick='delExamData(" +
               resp[i].id +
               ",`" +
@@ -256,7 +279,12 @@ function getExamData() {
           } else {
             extra = "";
           }
-          sumPaper = parseInt(resp[i].paper) + parseInt(resp[i].paper_extra);
+
+          sumPaper =
+            parseInt(resp[i].paper) +
+            parseInt(resp[i].paper_extra) +
+            parseInt(resp[i].paper_backup);
+
           tb_his.row
             .add([
               i + 1 + " " + verify,
@@ -265,7 +293,13 @@ function getExamData() {
               resp[i].school,
               resp[i].box_id,
               resp[i].start_id + " - " + resp[i].end_id + extra,
-              resp[i].paper + "+" + resp[i].paper_extra + "=" + sumPaper,
+              resp[i].paper +
+                "+" +
+                resp[i].paper_extra +
+                "+" +
+                resp[i].paper_backup +
+                "=" +
+                sumPaper,
               resp[i].username,
               "<button onclick='VerifyData(" +
                 resp[i].ide +
@@ -339,7 +373,9 @@ function VerifyData(id) {
       $("#v_box").text(r.box_id);
       $("#v_no_student").text(r.start_id + " - " + r.end_id);
       $("#v_no_student_ex").text(r.extra1 + ", " + r.extra2);
-      $("#v_paper").text(parseInt(r.paper) + parseInt(r.paper_extra));
+      $("#v_paper").text(
+        parseInt(r.paper) + parseInt(r.paper_extra) + parseInt(r.paper_backup)
+      );
       $("#attend").val(r.attend);
       $("#no_attend").val(r.no_attend);
     },
@@ -362,7 +398,9 @@ function viewData(id) {
       $("#vv_box").text(r.box_id);
       $("#vv_no_student").text(r.start_id + " - " + r.end_id);
       $("#vv_no_student_ex").text(r.extra1 + ", " + r.extra2);
-      $("#vv_paper").text(parseInt(r.paper) + parseInt(r.paper_extra));
+      $("#vv_paper").text(
+        parseInt(r.paper) + parseInt(r.paper_extra) + parseInt(r.paper_backup)
+      );
       if (r.attend == "" || r.attend == null) {
         msg1 = "- ยังไม่ได้ Verify -";
       } else {

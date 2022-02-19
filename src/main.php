@@ -115,7 +115,7 @@
 							<div class="col-md-2">
 								<div class="form-group">
 									<label>จำนวนกระดาษ</label>
-									<input type="number" id="paper" onchange="call_paper()" class="form-control" required placeholder="จำนวนกระดาษ" max="10000">
+									<input type="number" id="paper" onchange="call_paper()" class="form-control" required placeholder="จำนวนกระดาษ" value="0" max="10000">
 								</div>
 							</div>
 							<div class="col-md-2">
@@ -126,13 +126,19 @@
 							</div>
 							<div class="col-md-2">
 								<div class="form-group">
+									<label>จำนวนกระดาษ (สำรอง)</label>
+									<input type="number" id="paper_backup" onchange="call_paper()" class="form-control" required placeholder="จำนวนกระดาษพิเศษ" value="0" max="10000">
+								</div>
+							</div>
+							
+						</div>
+						<div class="row">
+						<div class="col-md-11">
+								<div class="form-group">
 									<label>จำนวนกระดาษทั้งหมด</label><br>
 									<div id="sum_paper">0 ชุด</div>
 								</div>
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-11"></div>
 							<div class="col-md-1">
 								<div class="form-group">
 									<input type="text" id="uid" value="<?php echo $_SESSION['user'];?>" hidden>
@@ -306,13 +312,13 @@
 						      		<div class="col-md-6">
 						      			<div class="form-group">
 						      				<label>จำนวนผู้<font color="green"><u>เข้าสอบ </u></font></label>
-						      				<input class="form-control" autofocus onchange="sum_atten_people()" type="number" id="attend" placeholder="จำนวนผู้เข้าสอบ">
+						      				<input class="form-control" autofocus onchange="sum_atten_people()" value="0" type="number" id="attend" placeholder="จำนวนผู้เข้าสอบ">
 						      			</div>
 						      		</div>
 						      		<div class="col-md-6">
 						      			<div class="form-group">
 						      				<label>จำนวนผู้<font color="red"><u>ขาดสอบ </u></font></label>
-						      				<input class="form-control" onchange="sum_atten_people()" type="number" id="no_attend" placeholder="จำนวนผู้ขาดสอบ">
+						      				<input class="form-control" onchange="sum_atten_people()" value="0" type="number" id="no_attend" placeholder="จำนวนผู้ขาดสอบ">
 						      			</div>
 						      		</div>
 						      		<div class="col-md-12">

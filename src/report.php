@@ -172,6 +172,7 @@
 									echo "<th>รายวิชา</th>";
 									echo "<th>จำนวนกระดาษ</th>";
 									echo "<th>จำนวนกระดาษ พิเศษ</th>";
+									echo "<th>จำนวนกระดาษ สำรอง</th>";
 									echo "<th>จำนวนผู้เข้าสอบ</th>";
 									echo "<th>จำนวนผู้ขาดสอบ</th>";
 								echo "</tr>";
@@ -182,7 +183,7 @@
 									$count = $c->rowCount();
 
 									if($count){
-										$stmt = $db->prepare("SELECT SUM(paper) as cpaper, SUM(paper_extra) as cpaper_extra, SUM(attend) as cattend, SUM(no_attend) as cno_attend FROM examData WHERE school = '$school[$i]' AND subject = '$sub[$s]' AND verify = 1");
+										$stmt = $db->prepare("SELECT SUM(paper) as cpaper, SUM(paper_extra) as cpaper_extra, SUM(paper_backup) as cpaper_backup, SUM(attend) as cattend, SUM(no_attend) as cno_attend FROM examData WHERE school = '$school[$i]' AND subject = '$sub[$s]' AND verify = 1");
 										$stmt->execute();
 										$data = $stmt->fetch(PDO::FETCH_OBJ);
 
@@ -190,6 +191,7 @@
 										echo "<td>".exam_subject($sub[$s])."</td>";
 										echo "<td>".$data->cpaper." ใบ</td>";
 										echo "<td>".$data->cpaper_extra." ใบ</td>";
+										echo "<td>".$data->cpaper_backup." ใบ</td>";
 										echo "<td>".$data->cattend." คน</td>";
 										echo "<td>".$data->cno_attend." คน</td>";
 										echo "</tr>";
