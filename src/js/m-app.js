@@ -334,8 +334,11 @@ function getExamData() {
               if ($("#exam_type").val() == 0) {
                 $("#stat").hide("dd");
               } else {
+                console.log(r[0].cpaper_backup);
                 $("#cpaper").text(set_dat(r[0].cpaper));
-                $("#cpaper_extra").text(set_dat(r[0].cpaper_extra));
+                $("#cpaper_extra").text(
+                  set_dat(r[0].cpaper_extra + "/" + r[0].cpaper_backup)
+                );
                 $("#cattend").text(set_dat(r[0].cattend));
                 $("#cno_attend").text(set_dat(r[0].cno_attend));
                 $("#stat").show("dd");

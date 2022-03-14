@@ -247,7 +247,7 @@
 								<div class="col-md-3">
 									<div class="panel panel-default">
 							            <div class="panel-heading"><center>
-							              <h5 class="panel-title"><b> จำนวนกระดาษ (พิเศษ)</b></h5>
+							              <h5 class="panel-title"><b> จำนวนกระดาษ (พิเศษ/สำรอง)</b></h5>
 							            </div>
 							            <div class="panel-body"><center>
 							            	<h1 id="cpaper_extra"></h1>
@@ -413,6 +413,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap.min.js"></script>
-<script type="text/javascript" src="./js/mapp.js"></script>
+<script type="text/javascript" src="./js/m-app.js"></script>
 </body>
 </html>
