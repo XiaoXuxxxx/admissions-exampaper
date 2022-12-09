@@ -43,8 +43,8 @@
 										<select class="form-control" id="exam_type" required onchange="auto_exam_list()">
 											<option value="0">โปรดเลือก ...</option>
 											<option value="1">O-NET</option>
-											<option value="2">GAT/PAT</option>
-											<option value="3">วิชาสามัญ</option>
+											<option value="2">TGAT/TPAT</option>
+											<option value="3">A-Level</option>
 											<option value="4">การทดสอบและประเมินสมรรถนะทางวิชาชีพครู</option>
 										</select>
 									</div>
@@ -71,11 +71,8 @@
 										<option>สตรีสมุทรปราการ</option>
 										<option>ศึกษานารี</option>
 										<option>มัธยมวัดสิงห์</option>
-										<option>ชิโนรสวิทยาลัย</option>
 										<option>รัตนโกสินทร์สมโภช บางขุนเทียน</option>
-										<option>ทวีธาภิเศก</option>
-										<option>มัธยมวัดหนองแขม</option>
-										<option>ราชประชาสมาสัยฯ</option>
+										<option>มจธ. CBT</option>
 
 									</select>
 								</div>
@@ -100,18 +97,6 @@
 									<input type="number" id="id_end_no" onchange="call_people()" class="form-control" required placeholder="เลขที่ท้าย" min="1" max="1000000000">
 								</div>
 							</div>
-							<div class="col-md-1">
-								<div class="form-group">
-									<label>เลขที่ผู้เข้าสอบ</label>
-									<input type="text" id="extra1" placeholder="พิเศษ 1" class="form-control">
-								</div>
-							</div>
-							<div class="col-md-1">
-								<div class="form-group">
-									<label>เลขที่ผู้เข้าสอบ</label>
-									<input type="text" id="extra2" placeholder="พิเศษ 2" class="form-control">
-								</div>
-							</div>
 							<div class="col-md-2">
 								<div class="form-group">
 									<label>จำนวนกระดาษ</label>
@@ -120,18 +105,51 @@
 							</div>
 							<div class="col-md-2">
 								<div class="form-group">
-									<label>จำนวนกระดาษ (พิเศษ)</label>
-									<input type="number" id="paper_extra" onchange="call_paper()" class="form-control" required placeholder="จำนวนกระดาษพิเศษ" value="0" max="10000">
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="form-group">
 									<label>จำนวนกระดาษ (สำรอง)</label>
 									<input type="number" id="paper_backup" onchange="call_paper()" class="form-control" required placeholder="จำนวนกระดาษพิเศษ" value="0" max="10000">
 								</div>
 							</div>
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>จำนวนกระดาษ (พิเศษ)</label>
+									<input type="number" id="paper_extra" onchange="call_paper()" class="form-control" required placeholder="จำนวนกระดาษพิเศษ" value="0" max="10000">
+								</div>
+							</div>
+							
 							
 						</div>
+						<div class="row">
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>เลขที่ผู้เข้าสอบ(คนที่ 1)</label>
+									<input type="text" id="extra1" placeholder="พิเศษ 1" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>เลขที่ผู้เข้าสอบ(คนที่ 2)</label>
+									<input type="text" id="extra2" placeholder="พิเศษ 2" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>เลขที่ผู้เข้าสอบ(คนที่ 3)</label>
+									<input type="text" id="extra3" placeholder="พิเศษ 3" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>เลขที่ผู้เข้าสอบ(คนที่ 4)</label>
+									<input type="text" id="extra4" placeholder="พิเศษ 4" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>เลขที่ผู้เข้าสอบ(คนที่ 5)</label>
+									<input type="text" id="extra5" placeholder="พิเศษ 5" class="form-control">
+								</div>
+							</div>
+							</div>
 						<div class="row">
 						<div class="col-md-11">
 								<div class="form-group">
@@ -188,8 +206,8 @@
 										<select class="form-control" id="exam_type" required onchange="auto_exam_list()">
 											<option value="0">โปรดเลือก ...</option>
 											<option value="1">O-NET</option>
-											<option value="2">GAT/PAT</option>
-											<option value="3">วิชาสามัญ</option>
+											<option value="2">TGAT/TPAT</option>
+											<option value="3">A-Level</option>
 											<option value="4">การทดสอบและประเมินสมรรถนะทางวิชาชีพครู</option>
 										</select>
 									</div>

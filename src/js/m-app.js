@@ -7,34 +7,34 @@ var sub_onet = `
 	<option value="o5">สังคมศึกษา ศาสนาและวัฒนธรรม</option>
 `;
 var sub_gat_pat = `
-	<option value="g1">GAT ตอนที่ 1 (General Aptitude Test)</option>
-	<option value="g2">GAT ตอนที่ 2 (General Aptitude Test)</option>
-	<option value="p1">PAT 1 ความถนัดทางคณิตศาสตร์</option>
-	<option value="p2">PAT 2 ความถนัดทางวิทยาศาสตร์</option>
-	<option value="p3">PAT 3 ความถนัดทางวิศวกรรมศาสตร์</option>
-	<option value="p41">PAT 4 (1) ความถนัดทางสถาปัตยกรรมศาสตร์</option>
-	<option value="p42">PAT 4 (2) ความถนัดทางสถาปัตยกรรมศาสตร์</option>
-	<option value="p43">PAT 4 (3) ความถนัดทางสถาปัตยกรรมศาสตร์</option>
-	<option value="p5">PAT 5 ความถนัดทางวิชาชีพครู</option>
-	<option value="p6">PAT 6 ความถนัดทางศิลปกรรมศาสตร์</option>
-	<option value="p71">PAT 7.1 ความถนัดทางภาษาฝรั่งเศส</option>
-	<option value="p72">PAT 7.2 ความถนัดทางภาษาเยอรมัน</option>
-	<option value="p73">PAT 7.3 ความถนัดทางภาษาญี่ปุ่น</option>
-	<option value="p74">PAT 7.4 ความถนัดทางภาษาจีน</option>
-	<option value="p75">PAT 7.5 ความถนัดทางภาษาอาหรับ</option>
-	<option value="p76">PAT 7.6 ความถนัดทางภาษาบาลี</option>
-	<option value="p77">PAT 7.7 ความถนัดทางภาษาเกาหลี</option>
+	<option value="tg1"> TGAT1 การสื่อสารภาษาอังกฤษ</option>
+	<option value="tg2"> TGAT2 การคิดอย่างมีเหตุผล</option>
+	<option value="tg3"> TGAT3 สมรรถนะการทำงาน</option>
+	<option value="tp21"> TPAT21 ทัศนศิลป์</option>
+	<option value="tp22"> TPAT22 ดนตรี</option>
+	<option value="tp23"> TPAT23 นาฏศิลป์</option>
+	<option value="tp3"> TPAT3 ความถนัดวิทยาศาสตร์ เทคโนโลยีวิศวกรรมศาสตร์</option>
+	<option value="tp4"> TPAT4 ความถนัดสถาปัตยกรรมศาสตร์</option>
+	<option value="tp5"> TPAT5 ความถนัดครุศาสตร์-ศึกษาศาสตร์</option>
+	
 `;
 var sub_main = `
-	<option value="m1">ชีววิทยา</option>
-	<option value="m2">ฟิสิกส์</option>
-	<option value="m3">ภาษาไทย</option>
-	<option value="m4">สังคมศึกษา</option>
-	<option value="m5">คณิตศาสตร์ 1</option>
-	<option value="m8">คณิตศาสตร์ 2</option>
-	<option value="m6">ภาษาอังกฤษ</option>
-	<option value="m9">วิทยาศาสตร์ทั่วไป</option>
-	<option value="m7">เคมี</option>
+	<option value="m1">A-Level คณิตศาสตร์ประยุกต์ 1 (พื้นฐาน+เพิ่มเติม)</option>
+	<option value="m2">A-Level คณิตศาสตร์ประยุกต์ 2 (พื้นฐาน)</option>
+	<option value="m3">A-Level วิทยาศาสตร์ประยุกต์</option>
+	<option value="m4">A-Level ฟิสิกส์</option>
+	<option value="m5">A-Level เคมี</option>
+	<option value="m6">A-Level ชีววิทยา</option>
+	<option value="m7">A-Level สังคมศาสตร์</option>
+	<option value="m8">A-Level ภาษาไทย</option>
+	<option value="m9">A-Level ภาษาอังกฤษ</option>
+	<option value="m10">A-Level ภาษาฝรั่งเศส</option>
+	<option value="m11">A-Level ภาษาเยอรมัน</option>
+	<option value="m12">A-Level ภาษาญี่ปุ่น</option>
+	<option value="m13">A-Level ภาษาเกาหลี</option>
+	<option value="m14">A-Level ภาษาจีน</option>
+	<option value="m15">A-Level ภาษาบาลี</option>
+	<option value="m16">A-Level ภาษาสเปน</option>
 `;
 
 var sub_kru = `
@@ -106,6 +106,9 @@ function insert() {
   var id_end_no = $("#id_end_no").val();
   var extra1 = $("#extra1").val();
   var extra2 = $("#extra2").val();
+  var extra3 = $("#extra3").val();
+  var extra4 = $("#extra4").val();
+  var extra5 = $("#extra5").val();
   var paper = $("#paper").val();
   var paper_extra = $("#paper_extra").val();
   var paper_backup = $("#paper_backup").val();
@@ -125,6 +128,9 @@ function insert() {
       id_end_no: id_end_no,
       extra1: extra1,
       extra2: extra2,
+      extra3: extra3,
+      extra4: extra4,
+      extra5: extra5,
       paper: paper,
       paper_extra: paper_extra,
       paper_backup: paper_backup,
@@ -168,7 +174,8 @@ function getHistory() {
           verify = " <font color='#999'><i class='fa fa-spinner'></i></font>";
         }
         if (resp[i].extra1 != "") {
-          extra = "<br>พิเศษ : " + resp[i].extra1 + ", " + resp[i].extra2;
+          extra = "<br>พิเศษ : " + resp[i].extra1 + ", " 
+          + resp[i].extra2+", " + resp[i].extra3+", " + resp[i].extra4+", " + resp[i].extra5;
         } else {
           extra = "";
         }
@@ -275,7 +282,8 @@ function getExamData() {
             btn_type = "btn-success";
           }
           if (resp[i].extra1 != "") {
-            extra = "<br>พิเศษ : " + resp[i].extra1 + ", " + resp[i].extra2;
+            extra =  "<br>พิเศษ : " + resp[i].extra1 + ", " 
+            + resp[i].extra2+", " + resp[i].extra3+", " + resp[i].extra4+", " + resp[i].extra5;
           } else {
             extra = "";
           }
@@ -375,7 +383,7 @@ function VerifyData(id) {
       $("#v_school").text("โรงเรียน" + r.school);
       $("#v_box").text(r.box_id);
       $("#v_no_student").text(r.start_id + " - " + r.end_id);
-      $("#v_no_student_ex").text(r.extra1 + ", " + r.extra2);
+      $("#v_no_student_ex").text(r.extra1 + ", " + r.extra2, + ", " + r.extra3 + ", " + r.extra4 + ", " + r.extra5);
       $("#v_paper").text(
         parseInt(r.paper) + parseInt(r.paper_extra) + parseInt(r.paper_backup)
       );
@@ -400,7 +408,7 @@ function viewData(id) {
       $("#vv_school").text("โรงเรียน" + r.school);
       $("#vv_box").text(r.box_id);
       $("#vv_no_student").text(r.start_id + " - " + r.end_id);
-      $("#vv_no_student_ex").text(r.extra1 + ", " + r.extra2);
+      $("#vv_no_student_ex").text(r.extra1 + ", " + r.extra2 + ", " + r.extra3 + ", " + r.extra4 + ", " + r.extra5);
       $("#vv_paper").text(
         parseInt(r.paper) + parseInt(r.paper_extra) + parseInt(r.paper_backup)
       );
@@ -446,67 +454,65 @@ function exam_type(type) {
   if (type == "1") {
     return "ONET";
   } else if (type == "2") {
-    return "GAT/PAT";
+    return "TGAT/TPAT";
   } else if (type == "3") {
-    return "วิชาสามัญ";
+    return "A-Level";
   } else if (type == "4") {
     return "ทดสอบวิชาชีพครู";
   }
 }
 
 function exam_subject(sub) {
-  if (sub == "g1") {
-    return "GAT ตอนที่ 1";
-  } else if (sub == "g2") {
-    return "GAT ตอนที่ 2";
-  } else if (sub == "p1") {
-    return "PAT 1 ความถนัดทางคณิตศาสตร์";
-  } else if (sub == "p2") {
-    return "PAT 2 ความถนัดทางวิทยาศาสตร์";
-  } else if (sub == "p3") {
-    return "PAT 3 ความถนัดทางวิศวกรรมศาสตร์";
-  } else if (sub == "p41") {
-    return "PAT 4 (1) ความถนัดทางสถาปัตยกรรมศาสตร์";
-  } else if (sub == "p42") {
-    return "PAT 4 (2) ความถนัดทางสถาปัตยกรรมศาสตร์";
-  } else if (sub == "p43") {
-    return "PAT 4 (3) ความถนัดทางสถาปัตยกรรมศาสตร์";
-  } else if (sub == "p5") {
-    return "PAT 5 ความถนัดทางวิชาชีพครู";
-  } else if (sub == "p6") {
-    return "PAT 6 ความถนัดทางศิลปกรรมศาสตร์";
-  } else if (sub == "p71") {
-    return "PAT 7.1 ความถนัดทางภาษาฝรั่งเศส";
-  } else if (sub == "p72") {
-    return "PAT 7.2 ความถนัดทางภาษาเยอรมัน";
-  } else if (sub == "p73") {
-    return "PAT 7.3 ความถนัดทางภาษาญี่ปุ่น";
-  } else if (sub == "p74") {
-    return "PAT 7.4 ความถนัดทางภาษาจีน";
-  } else if (sub == "p75") {
-    return "PAT 7.5 ความถนัดทางภาษาอาหรับ";
-  } else if (sub == "p76") {
-    return "PAT 7.6 ความถนัดทางภาษาบาลี";
-  } else if (sub == "p77") {
-    return "PAT 7.7 ความถนัดทางภาษาเกาหลี";
-  } else if (sub == "m1") {
-    return "ชีววิทยา";
+  if (sub == "tg1") {
+    return "TGAT 1 การสื่อสารภาษาอังกฤษ";
+  } else if (sub == "tg2") {
+    return " TGAT 2 การคิดอย่างมีเหตุผล";
+  } else if (sub == "tg3") {
+    return " TGAT 3 สมรรถนะการทำงาน";
+  } else if (sub == "tp21") {
+    return " TPAT 21 ทัศนศิลป์";
+  } else if (sub == "tp22") {
+    return " TPAT 22 ดนตรี";
+  } else if (sub == "tp23") {
+    return " TPAT 23 นาฏศิลป์";
+  } else if (sub == "tp3") {
+    return " TPAT 3 ความถนัดวิทยาศาสตร์ เทคโนโลยีวิศวกรรมศาสตร์";
+  } else if (sub == "tp4") {
+    return " TPAT 4 ความถนัดสถาปัตยกรรมศาสตร์";
+  } else if (sub == "tp5") {
+    return " TPAT 5 ความถนัดครุศาสตร์-ศึกษาศาสตร์";
+  }  else if (sub == "m1") {
+    return "A-Level คณิตศาสตร์ประยุกต์ 1 (พื้นฐาน+เพิ่มเติม)";
   } else if (sub == "m2") {
-    return "ฟิสิกส์";
+    return "A-Level คณิตศาสตร์ประยุกต์ 2 (พื้นฐาน)";
   } else if (sub == "m3") {
-    return "ภาษาไทย";
+    return "A-Level วิทยาศาสตร์ประยุกต์";
   } else if (sub == "m4") {
-    return "สังคมศึกษา";
+    return "A-Level ฟิสิกส์";
   } else if (sub == "m5") {
-    return "คณิตศาสตร์ 1";
+    return " A-Level เคมี";
   } else if (sub == "m6") {
-    return "ภาษาอังกฤษ";
+    return " A-Level ชีววิทยา";
   } else if (sub == "m7") {
-    return "เคมี";
+    return " A-Level สังคมศาสตร์";
   } else if (sub == "m8") {
-    return "คณิตศาสตร์ 2";
+    return " A-Level ภาษาไทย";
   } else if (sub == "m9") {
-    return "วิทยาศาสตร์ทั่วไป";
+    return " A-Level ภาษาอังกฤษ";
+  } else if (sub == "m10") {
+    return " A-Level ภาษาฝรั่งเศส";
+  } else if (sub == "m11") {
+    return " A-Level ภาษาเยอรมัน";
+  } else if (sub == "m12") {
+    return " A-Level ภาษาญี่ปุ่น";
+  } else if (sub == "m13") {
+    return " A-Level ภาษาเกาหลี";
+  } else if (sub == "m14") {
+    return " A-Level ภาษาจีน";
+  } else if (sub == "m15") {
+    return " A-Level ภาษาบาลี";
+  } else if (sub == "m16") {
+    return " A-Level ภาษาสเปน";
   } else if (sub == "o1") {
     return "ภาษาไทย";
   } else if (sub == "o2") {
