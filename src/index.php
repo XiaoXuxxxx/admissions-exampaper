@@ -33,7 +33,7 @@
 									</td>
 									<td align="left">
 										<h3><i class="fa fa-sign-in"></i> <b>AdmissionsPlus</b></h3>
-										ONET, GAT/PAT, วิชาสามัญ
+										ONET, TGAT/TPAT, A-Level
 									</td>
 								</tr>
 							</table>

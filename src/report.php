@@ -36,7 +36,7 @@
 						<?php
 							$school[0] = "วัดนวลนรดิศ";
 							$school[1] = "วัดราชโอรส";
-							$school[2] = "บางประกอกวิทยาคม";
+							$school[2] = "บางปะกอกวิทยาคม";
 							$school[3] = "วิทยาลัยพณิชยการเชตุพน";
 							$school[4] = "ปัญญาวรคุณ";
 							$school[5] = "โพธิสารพิทยากร";
@@ -45,102 +45,96 @@
 							$school[8] = "สตรีสมุทรปราการ";
 							$school[9] = "ศึกษานารี";
 							$school[10] = "มัธยมวัดสิงห์";
-							$school[11] = "ชิโนรสวิทยาลัย";
-							$school[12] = "รัตนโกสินทร์สมโภช บางขุนเทียน";
-							$school[13] = "ทวีธาภิเศก";
-							$school[14] = "มัธยมวัดหนองแขม";
-							$school[15] = "ราชประชาสมาสัยฯ";
+							$school[11] = "รัตนโกสินทร์สมโภช บางขุนเทียน";
+							$school[12] = "มจธ. CBT";
 
-							$sub[0] = "g1";
-							$sub[1] = "g2";
-							$sub[2] = "p1";
-							$sub[3] = "p2";
-							$sub[4] = "p3";
-							$sub[5] = "p41";
-							$sub[6] = "p42";
-							$sub[7] = "p43";
-							$sub[8] = "p5";
-							$sub[9] = "p6";
-							$sub[10] = "p71";
-							$sub[11] = "p72";
-							$sub[12] = "p73";
-							$sub[13] = "p74";
-							$sub[14] = "p75";
-							$sub[15] = "p76";
-							$sub[16] = "p77";
-							$sub[17] = "m1";
-							$sub[18] = "m2";
-							$sub[19] = "m3";
-							$sub[20] = "m4";
-							$sub[21] = "m5";
-							$sub[22] = "m6";
-							$sub[23] = "m7";
-							$sub[24] = "m8";
-							$sub[25] = "m9";
-							$sub[26] = "o1";
-							$sub[27] = "o2";
-							$sub[28] = "o3";
-							$sub[29] = "o4";
-							$sub[30] = "o5";
-							$sub[31] = "k1";
-							$sub[32] = "k2";
-							$sub[33] = "k3";
-							$sub[34] = "k4";
-							$sub[35] = "k5";
+							$sub[0] = "tg1";
+							$sub[1] = "tg2";
+							$sub[2] = "tg3";
+							$sub[3] = "tp21";
+							$sub[4] = "tp22";
+							$sub[5] = "tp23";
+							$sub[6] = "tp3";
+							$sub[7] = "tp4";
+							$sub[8] = "tp5";
+							$sub[9] = "m1";
+							$sub[10] = "m2";
+							$sub[11] = "m3";
+							$sub[12] = "m4";
+							$sub[13] = "m5";
+							$sub[14] = "m6";
+							$sub[15] = "m7";
+							$sub[16] = "m8";
+							$sub[17] = "m9";
+							$sub[18] = "m10";
+							$sub[19] = "m11";
+							$sub[20] = "m12";
+							$sub[21] = "m13";
+							$sub[22] = "m14";
+							$sub[23] = "m15";
+							$sub[24] = "m16";
+							$sub[25] = "o1";
+							$sub[26] = "o2";
+							$sub[27] = "o3";
+							$sub[28] = "o4";
+							$sub[29] = "o5";
+							$sub[30] = "k1";
+							$sub[31] = "k2";
+							$sub[32] = "k3";
+							$sub[33] = "k4";
+							$sub[34] = "k5";
 
 							function exam_subject($sub){
-								if($sub == "g1"){
-									return "GAT ตอนที่ 1";
-								}else if($sub == "g2"){
-									return "GAT ตอนที่ 2";
-								}else if($sub == "p1"){
-									return "PAT 1 ความถนัดทางคณิตศาสตร์";
-								}else if($sub == "p2"){
-									return "PAT 2 ความถนัดทางวิทยาศาสตร์";
-								}else if($sub == "p3"){
-									return "PAT 3 ความถนัดทางวิศวกรรมศาสตร์";
-								}else if($sub == "p41"){
-									return "PAT 4 (1) ความถนัดทางสถาปัตยกรรมศาสตร์";
-								}else if($sub == "p42"){
-									return "PAT 4 (2) ความถนัดทางสถาปัตยกรรมศาสตร์";
-								}else if($sub == "p43"){
-									return "PAT 4 (3) ความถนัดทางสถาปัตยกรรมศาสตร์";
-								}else if($sub == "p5"){
-									return "PAT 5 ความถนัดทางวิชาชีพครู";
-								}else if($sub == "p6"){
-									return "PAT 6 ความถนัดทางศิลปกรรมศาสตร์";
-								}else if($sub == "p71"){
-									return "PAT 7.1 ความถนัดทางภาษาฝรั่งเศส";
-								}else if($sub == "p72"){
-									return "PAT 7.2 ความถนัดทางภาษาเยอรมัน";
-								}else if($sub == "p73"){
-									return "PAT 7.3 ความถนัดทางภาษาญี่ปุ่น";
-								}else if($sub == "p74"){
-									return "PAT 7.4 ความถนัดทางภาษาจีน";
-								}else if($sub == "p75"){
-									return "PAT 7.5 ความถนัดทางภาษาอาหรับ";
-								}else if($sub == "p76"){
-									return "PAT 7.6 ความถนัดทางภาษาบาลี";
-								}else if($sub == "p77"){
-									return "PAT 7.7 ความถนัดทางภาษาเกาหลี";
-								}else if($sub == "m1"){
-									return "วิชาสามัญ - ชีววิทยา";
-								}else if($sub == "m2"){
-									return "วิชาสามัญ - ฟิสิกส์";
-								}else if($sub == "m3"){
-									return "วิชาสามัญ - ภาษาไทย";
-								}else if($sub == "m4"){
-									return "วิชาสามัญ - สังคมศึกษา";
-								}else if($sub == "m5"){
-									return "วิชาสามัญ - คณิตศาสตร์ 1";
-								}else if($sub == "m6"){
-									return "วิชาสามัญ - ภาษาอังกฤษ";
-								}else if($sub == "m7"){
-									return "วิชาสามัญ - เคมี";
-								}else if($sub == "m8"){
-									return "วิชาสามัญ - คณิตศาสตร์ 2";
-								}else if($sub == "m9"){
-									return "วิชาสามัญ - วิทยาศาสตร์ทั่วไป";
+								if($sub == "tg1"){
+									return "TGAT1 การสื่อสารภาษาอังกฤษ";
+								}else if($sub == "tg2"){
+									return "TGAT2 การคิดอย่างมีเหตุผล";
+								}else if($sub = "tg3"){
+									return "TGAT3 สมรรถนะการทำงาน";
+								}else if($sub = "tp21"){
+									return "ทัศนศิลป์";
+								}else if($sub = "tp22"){
+									return "ดนตรี";
+								}else if($sub = "tp23"){
+									return "นาฏศิลป์";
+								}else if($sub = "tp3"){
+									return "ความถนัดวิทยาศาสตร์ เทคโนโลยี วิศวกรรมศาสตร์";
+								}else if($sub = "tp4"){
+									return "ความถนัดสถาปัตยกรรมศาสตร์";
+								}else if($sub = "tp5"){
+									return "ความถนัดครุศาสตร์-ศึกษาศาสตร์";
+								}else if($sub = "m1"){
+									return "A-Level คณิตศาสตร์ประยุกต์ 1 (พื้นฐาน+เพิ่มเติม)";
+								}else if($sub = "m2"){
+									return "A-Level คณิตศาสตร์ประยุกต์ 2 (พื้นฐาน)";
+								}else if($sub = "m3"){
+									return "A-Level วิทยาศาสตร์ประยุกต์";
+								}else if($sub = "m4"){
+									return "A-Level ฟิสิกส์";
+								}else if($sub = "m5"){
+									return "A-Level เคมี";
+								}else if($sub = "m6"){
+									return "A-Level ชีววิทยา";
+								}else if($sub = "m7"){
+									return "A-Level สังคมศาสตร์";
+								}else if($sub = "m8"){
+									return "A-Level ภาษาไทย";
+								}else if($sub = "m9"){
+									return "A-Level ภาษาอังกฤษ";
+								}else if($sub = "m10"){
+									return "A-Level ภาษาฝรั่งเศส";
+								}else if($sub = "m11"){
+									return "A-Level ภาษาเยอรมัน";
+								}else if($sub = "m12"){
+									return "A-Level ภาษาญี่ปุ่น";
+								}else if($sub = "m13"){
+									return "A-Level ภาษาเกาหลี";
+								}else if($sub = "m14"){
+									return "A-Level ภาษาจีน";
+								}else if($sub = "m15"){
+									return "A-Level ภาษาบาลี";
+								}else if($sub = "m16"){
+									return "A-Level ภาษาสเปน";
 								}else if($sub == "o1"){
 									return "ONET - ภาษาไทย";
 								}else if($sub == "o2"){
