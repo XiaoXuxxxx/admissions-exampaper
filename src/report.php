@@ -48,55 +48,43 @@
 							$school[11] = "รัตนโกสินทร์สมโภช บางขุนเทียน";
 							$school[12] = "มจธ. CBT";
 
-							$sub[0] = "tg1";
-							$sub[1] = "tg2";
-							$sub[2] = "tg3";
-							$sub[3] = "tp21";
-							$sub[4] = "tp22";
-							$sub[5] = "tp23";
-							$sub[6] = "tp3";
-							$sub[7] = "tp4";
-							$sub[8] = "tp5";
-							$sub[9] = "m1";
-							$sub[10] = "m2";
-							$sub[11] = "m3";
-							$sub[12] = "m4";
-							$sub[13] = "m5";
-							$sub[14] = "m6";
-							$sub[15] = "m7";
-							$sub[16] = "m8";
-							$sub[17] = "m9";
-							$sub[18] = "m10";
-							$sub[19] = "m11";
-							$sub[20] = "m12";
-							$sub[21] = "m13";
-							$sub[22] = "m14";
-							$sub[23] = "m15";
-							$sub[24] = "m16";
-							$sub[25] = "o1";
-							$sub[26] = "o2";
-							$sub[27] = "o3";
-							$sub[28] = "o4";
-							$sub[29] = "o5";
-							$sub[30] = "k1";
-							$sub[31] = "k2";
-							$sub[32] = "k3";
-							$sub[33] = "k4";
-							$sub[34] = "k5";
+							$sub[0] = "tg";
+							$sub[1] = "tp2";
+							$sub[2] = "tp3";
+							$sub[3] = "tp4";
+							$sub[4] = "tp5";
+							$sub[5] = "m1";
+							$sub[6] = "m2";
+							$sub[7] = "m3";
+							$sub[8] = "m4";
+							$sub[9] = "m5";
+							$sub[10] = "m6";
+							$sub[11] = "m7";
+							$sub[12] = "m8";
+							$sub[13] = "m9";
+							$sub[14] = "m10";
+							$sub[15] = "m11";
+							$sub[16] = "m12";
+							$sub[17] = "m13";
+							$sub[18] = "m14";
+							$sub[19] = "m15";
+							$sub[20] = "m16";
+							$sub[21] = "o1";
+							$sub[22] = "o2";
+							$sub[23] = "o3";
+							$sub[24] = "o4";
+							$sub[25] = "o5";
+							$sub[26] = "k1";
+							$sub[27] = "k2";
+							$sub[28] = "k3";
+							$sub[29] = "k4";
+							$sub[30] = "k5";
 
 							function exam_subject($sub){
-								if($sub == "tg1"){
-									return "TGAT1 การสื่อสารภาษาอังกฤษ";
-								}else if($sub == "tg2"){
-									return "TGAT2 การคิดอย่างมีเหตุผล";
-								}else if($sub = "tg3"){
-									return "TGAT3 สมรรถนะการทำงาน";
-								}else if($sub = "tp21"){
-									return "ทัศนศิลป์";
-								}else if($sub = "tp22"){
-									return "ดนตรี";
-								}else if($sub = "tp23"){
-									return "นาฏศิลป์";
+								if($sub == "tg"){
+									return "ความถนัดทั่วไป";
+								}else if($sub = "tp2"){
+									return "ความถนัดทางศิลปกรรมศาสตร์";
 								}else if($sub = "tp3"){
 									return "ความถนัดวิทยาศาสตร์ เทคโนโลยี วิศวกรรมศาสตร์";
 								}else if($sub = "tp4"){

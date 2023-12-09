@@ -7,12 +7,8 @@ var sub_onet = `
 	<option value="o5">สังคมศึกษา ศาสนาและวัฒนธรรม</option>
 `;
 var sub_gat_pat = `
-	<option value="tg1"> TGAT1 การสื่อสารภาษาอังกฤษ</option>
-	<option value="tg2"> TGAT2 การคิดอย่างมีเหตุผล</option>
-	<option value="tg3"> TGAT3 สมรรถนะการทำงาน</option>
-	<option value="tp21"> TPAT21 ทัศนศิลป์</option>
-	<option value="tp22"> TPAT22 ดนตรี</option>
-	<option value="tp23"> TPAT23 นาฏศิลป์</option>
+	<option value="tg"> TGAT ความถนัดทั่วไป</option>
+  <option value="tp2"> TPAT2 ความถนัดทางศิลปกรรมศาสตร์</option>
 	<option value="tp3"> TPAT3 ความถนัดวิทยาศาสตร์ เทคโนโลยีวิศวกรรมศาสตร์</option>
 	<option value="tp4"> TPAT4 ความถนัดสถาปัตยกรรมศาสตร์</option>
 	<option value="tp5"> TPAT5 ความถนัดครุศาสตร์-ศึกษาศาสตร์</option>
@@ -463,18 +459,10 @@ function exam_type(type) {
 }
 
 function exam_subject(sub) {
-  if (sub == "tg1") {
-    return "TGAT 1 การสื่อสารภาษาอังกฤษ";
-  } else if (sub == "tg2") {
-    return " TGAT 2 การคิดอย่างมีเหตุผล";
-  } else if (sub == "tg3") {
-    return " TGAT 3 สมรรถนะการทำงาน";
-  } else if (sub == "tp21") {
-    return " TPAT 21 ทัศนศิลป์";
-  } else if (sub == "tp22") {
-    return " TPAT 22 ดนตรี";
-  } else if (sub == "tp23") {
-    return " TPAT 23 นาฏศิลป์";
+  if (sub == "tg") {
+    return "TGAT ความถนัดทั่วไป";
+  } else if (sub == "tp2") {
+    return " TPAT 2 ความถนัดทางศิลปกรรมศาสตร์"
   } else if (sub == "tp3") {
     return " TPAT 3 ความถนัดวิทยาศาสตร์ เทคโนโลยีวิศวกรรมศาสตร์";
   } else if (sub == "tp4") {
