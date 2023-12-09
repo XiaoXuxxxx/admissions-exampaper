@@ -1,3 +1,4 @@
+// [EXAM SUBJECT]
 var sum_people = 0;
 var sub_onet = `
 	<option value="o1">ภาษาไทย</option>
@@ -458,6 +459,7 @@ function exam_type(type) {
   }
 }
 
+// [EXAM SUBJECT]
 function exam_subject(sub) {
   if (sub == "tg") {
     return "TGAT ความถนัดทั่วไป";
