@@ -62,7 +62,7 @@
 										<option value="0">โปรดเลือก ...</option>
 										<option>วัดนวลนรดิศ</option>
 										<option>วัดราชโอรส</option>
-										<option>บางประกอกวิทยาคม</option>
+										<option>บางปะกอกวิทยาคม</option>
 										<option>วิทยาลัยพณิชยการเชตุพน</option>
 										<option>ปัญญาวรคุณ</option>
 										<option>โพธิสารพิทยากร</option>
