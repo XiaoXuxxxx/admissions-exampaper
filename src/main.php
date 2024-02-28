@@ -57,6 +57,7 @@
 								</div>
 							<div class="col-md-3">
 								<div class="form-group">
+									<!-- School Change -->
 									<label>โรงเรียน</label>
 									<select class="form-control" id="school" required>
 										<option value="0">โปรดเลือก ...</option>
@@ -73,6 +74,7 @@
 										<option>มัธยมวัดสิงห์</option>
 										<option>รัตนโกสินทร์สมโภช บางขุนเทียน</option>
 										<option>มจธ. CBT</option>
+										<option>ชิโนรสวิทยาลัย</option>
 
 									</select>
 								</div>

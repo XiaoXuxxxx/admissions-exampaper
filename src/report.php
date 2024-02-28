@@ -32,6 +32,7 @@
 						<li class=""><a href="./logout.php">logout</a></li>
 					</ol>
 					<div id="main-content-container">
+						<!-- School change -->
 						<h2><i class="fa fa-file-signature"></i> สรุปรายการแต่ละโรงเรียน</h2>
 						<?php
 							$school[0] = "วัดนวลนรดิศ";
@@ -47,6 +48,7 @@
 							$school[10] = "มัธยมวัดสิงห์";
 							$school[11] = "รัตนโกสินทร์สมโภช บางขุนเทียน";
 							$school[12] = "มจธ. CBT";
+							$school[13] = "ชิโนรสวิทยาลัย";
 
 							// [EXAM SUBJECT]
 							$sub[0] = "tg";
