@@ -105,7 +105,7 @@
 								}else if($sub = "m6"){
 									return "A-Level ชีววิทยา";
 								}else if($sub = "m7"){
-									return "A-Level สังคมศาสตร์";
+									return "A-Level สังคมศึกษา";
 								}else if($sub = "m8"){
 									return "A-Level ภาษาไทย";
 								}else if($sub = "m9"){

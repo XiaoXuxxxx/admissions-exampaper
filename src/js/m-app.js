@@ -22,7 +22,7 @@ var sub_main = `
 	<option value="m4">A-Level ฟิสิกส์</option>
 	<option value="m5">A-Level เคมี</option>
 	<option value="m6">A-Level ชีววิทยา</option>
-	<option value="m7">A-Level สังคมศาสตร์</option>
+	<option value="m7">A-Level สังคมศึกษา</option>
 	<option value="m8">A-Level ภาษาไทย</option>
 	<option value="m9">A-Level ภาษาอังกฤษ</option>
 	<option value="m10">A-Level ภาษาฝรั่งเศส</option>
@@ -484,7 +484,7 @@ function exam_subject(sub) {
   } else if (sub == "m6") {
     return " A-Level ชีววิทยา";
   } else if (sub == "m7") {
-    return " A-Level สังคมศาสตร์";
+    return " A-Level สังคมศึกษา";
   } else if (sub == "m8") {
     return " A-Level ภาษาไทย";
   } else if (sub == "m9") {
